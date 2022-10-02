@@ -20,6 +20,11 @@ mongoose.connect(MONGODB_URL, {
   .on("close", () => console.log("You are disconnected from mongoose"))
   .on("error", (error) => console.log(error));
 
+// MiddleWare
+app.use(cors());
+app.use(morgan("dev"));
+app.use(express.json());
+
 // Routes
 // Test route
 app.get("/", (req, res) => {
