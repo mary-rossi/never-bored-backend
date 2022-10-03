@@ -3,7 +3,7 @@ const couplesRouter = express.Router();
 const User = require('../models/user');
 const Events = require('../models/events')
 const Activity = require('../models/activity')
-
+const Profile = require('../models/profile')
 // Couple/user Index route
 couplesRouter.get('/:id', async (req, res) => {
     try {
@@ -63,5 +63,26 @@ couplesRouter.post('/', async (req, res) => {
         res.status(400).json(error);
     }
 }); 
+
+// Couple/profile Index route
+couplesRouter.get('/:id', async (req, res) => {
+    try {
+        // send all people
+        res.json(await Profile.find({}));
+    } catch (error) {
+        //send error
+        res.status(400).json(error);
+    }
+});
+
+// Couple/profile Create route
+couplesRouter.post('/', async (req, res) => {
+    try {
+        res.json(await Profile.create(req.body));
+    } catch (error) {
+        res.status(400).json(error);
+    }
+}); 
+
 
 module.exports = couplesRouter;
