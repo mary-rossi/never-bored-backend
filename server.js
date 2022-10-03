@@ -8,7 +8,8 @@ const app = express(); // create application object
 const mongoose = require("mongoose");
 const cors = require("cors");
 const morgan = require("morgan");
-const User = require('./models/user')
+const couplesController = require("./controllers/couples");
+// const User = require('./models/user')
 
 mongoose.connect(MONGODB_URL, {
     useUnifiedTopology: true,
@@ -24,32 +25,26 @@ mongoose.connect(MONGODB_URL, {
 app.use(cors());
 app.use(morgan("dev"));
 app.use(express.json());
+app.use('/couples', couplesController); 
 
 // Routes
 // Test route
 app.get("/", (req, res) => {
-    res.send("hello world");
+    res.send("hello world"); 
 });
 
-// Couple Index Route
-app.get("/couples", async (req, res) => {
-    try {
-        // send all people
-        res.json(await User.find({}));
-    } catch (error) {
-        //send error
-        res.status(400).json(error);
-    }
-});
 
-// Couple Create Route
-app.post("/couples", async (req, res) => {
-    try {
-        res.json(await User.create(req.body));
-    } catch (error) {
-        res.status(400).json(error);
-    }
-}); 
+
+
+
+
+
+
+
+
+
+
+
 
 // Listener
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
