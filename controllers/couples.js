@@ -5,7 +5,7 @@ const Events = require('../models/events')
 const Activity = require('../models/activity')
 const Profile = require('../models/profile')
 // Couple/user Index route
-couplesRouter.get('/:id', async (req, res) => {
+couplesRouter.get('/userPage', async (req, res) => {
     try {
         // send all people
         res.json(await User.find({}));
@@ -16,7 +16,7 @@ couplesRouter.get('/:id', async (req, res) => {
 });
 
 // Couple/user Create route
-couplesRouter.post('/', async (req, res) => {
+couplesRouter.post('/userPage', async (req, res) => {
     try {
         res.json(await User.create(req.body));
     } catch (error) {
@@ -25,7 +25,7 @@ couplesRouter.post('/', async (req, res) => {
 }); 
 
 // Couple/events Index route
-couplesRouter.get('/:id', async (req, res) => {
+couplesRouter.get('/eventsPage', async (req, res) => {
     try {
         // send all people
         res.json(await Events.find({}));
@@ -36,7 +36,7 @@ couplesRouter.get('/:id', async (req, res) => {
 });
 
 // Couple/events Create route
-couplesRouter.post('/', async (req, res) => {
+couplesRouter.post('/eventsPage', async (req, res) => {
     try {
         res.json(await Events.create(req.body));
     } catch (error) {
@@ -45,7 +45,7 @@ couplesRouter.post('/', async (req, res) => {
 }); 
 
 // Couple/activity Index route
-couplesRouter.get('/:id', async (req, res) => {
+couplesRouter.get('/activityPage', async (req, res) => {
     try {
         // send all people
         res.json(await Activity.find({}));
@@ -56,7 +56,7 @@ couplesRouter.get('/:id', async (req, res) => {
 });
 
 // Couple/activity Create route
-couplesRouter.post('/', async (req, res) => {
+couplesRouter.post('/activityPage', async (req, res) => {
     try {
         res.json(await Activity.create(req.body));
     } catch (error) {
@@ -65,7 +65,7 @@ couplesRouter.post('/', async (req, res) => {
 }); 
 
 // Couple/profile Index route
-couplesRouter.get('/:id', async (req, res) => {
+couplesRouter.get('/profilePage', async (req, res) => {
     try {
         // send all people
         res.json(await Profile.find({}));
@@ -76,7 +76,7 @@ couplesRouter.get('/:id', async (req, res) => {
 });
 
 // Couple/profile Create route
-couplesRouter.post('/', async (req, res) => {
+couplesRouter.post('/profilePage', async (req, res) => {
     try {
         res.json(await Profile.create(req.body));
     } catch (error) {
