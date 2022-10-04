@@ -1,5 +1,32 @@
 [
     {
-        
+        "activityName": "Hiking",
+        "accessability": 5,
+        "description": "Go on a hike and have some fun :)",
+        "type": "life"
+    },
+    {
+        "activityName": "bake a cake",
+        "accessability": 9,
+        "description": "Chocolate cake is an aphrodisiac",
+        "type": "love"
+    },
+    {
+        "activityName": "Play a board game",
+        "accessability": 10,
+        "description": "No more phones kids",
+        "type": "laughter"
+    },
+    {
+        "activityName": "Fishing",
+        "accessability": 7,
+        "description": "Fish on!! Fish on!!",
+        "type": "life"
+    },
+    {
+        "activityName": "give me rent",
+        "accessability": 0,
+        "description": "we live in a free country, not a rent free country",
+        "type": "laughter"
     }
 ]
