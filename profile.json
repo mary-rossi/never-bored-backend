@@ -1,0 +1,23 @@
+[
+    {
+        "userName": "Bae4lyfe",
+        "photo": "bae-lyfe.jpeg",
+        "about": "Hey everyone! Vincent and angel here. We joined this site to help us think of more fun date ideas. We'd love to meet up for double dates too!",
+        "personality": "Vincent is an ESFJ and I'm an ENTP!",
+        "interest": "Hiking, lake days, wine tastings, live music, anything active!"
+    },
+    {
+        "userName": "TheSmiths",
+        "photo": "the-smiths.jpeg",
+        "about": "Hey there. We are the Smith's and we randomly found this site and thought why not give it a try. We love going on dates every weekend and trying new things.",
+        "personality": "Sean brings the golden retriever energy and Alexa brings the cat energy!",
+        "interest": "Traveling, exploring new cities, shopping, partying, the beach, etc"
+    },
+    {
+        "userName": "AshandBrooke",
+        "photo": "ash-brooke.jpeg",
+        "about": "Hi! Ash on the left and Brooke on the right. We're here looking for more chill activities since we're expecting :)",
+        "personality": "Typically we are both pretty outgoing and always down for an adventure, but since we have a little one coming, we're much more laid back now.",
+        "interest": "Trying new food, spa days, reading, & watching movies!"
+    }
+]
